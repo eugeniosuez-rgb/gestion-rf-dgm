@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestión RF DGM</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">RF</div>
+      <div>
+        <h1>Gestión RF DGM</h1>
+        <p>Portal preventivo</p>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#inicio" class="active">Inicio</a>
+      <a href="#riesgos">Riesgos Fatales</a>
+      <a href="#resso">RESSO V10</a>
+      <a href="#capacitaciones">Capacitaciones</a>
+      <a href="#auditorias">Auditorías</a>
+      <a href="#documentos">Documentos</a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <span>Actualizado: julio 2026</span>
+    </div>
+  </aside>
+
+  <main class="content">
+    <section id="inicio" class="hero">
+      <div>
+        <p class="eyebrow">Dashboard preventivo</p>
+        <h2>Portal de Gestión de Riesgos Fatales y Cumplimiento Operacional</h2>
+        <p class="hero-text">
+          Sitio de consulta rápida para controles críticos, auditorías, capacitaciones,
+          documentos y seguimiento de planes de acción.
+        </p>
+      </div>
+      <div class="hero-card">
+        <span class="status-dot"></span>
+        <strong>Estado general</strong>
+        <p>Base inicial en construcción</p>
+      </div>
+    </section>
+
+    <section class="grid kpi-grid" id="kpis"></section>
+
+    <section class="panel" id="riesgos">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Módulo 01</p>
+          <h3>Riesgos Fatales y Controles Críticos</h3>
+        </div>
+        <input id="busquedaRF" type="search" placeholder="Buscar RF, control o responsable...">
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>RF</th>
+              <th>Control crítico</th>
+              <th>Responsable</th>
+              <th>Estado</th>
+              <th>Evidencia requerida</th>
+            </tr>
+          </thead>
+          <tbody id="tablaRF"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="grid two-columns">
+      <article class="panel" id="resso">
+        <p class="eyebrow">Módulo 02</p>
+        <h3>RESSO V10</h3>
+        <ul class="clean-list">
+          <li><span class="badge ok">Activo</span> Auditorías ADC DGM</li>
+          <li><span class="badge warn">Pendiente</span> Auditorías ADC Contratistas</li>
+          <li><span class="badge neutral">Base</span> Categorización empresas</li>
+          <li><span class="badge neutral">Base</span> Seguimiento ZYGHT</li>
+        </ul>
+      </article>
+
+      <article class="panel" id="capacitaciones">
+        <p class="eyebrow">Módulo 03</p>
+        <h3>Capacitaciones</h3>
+        <div class="timeline">
+          <div><strong>Lunes</strong><span>Prevención de Riesgos en la Conducción</span></div>
+          <div><strong>Martes</strong><span>Herramientas Preventivas</span></div>
+          <div><strong>Miércoles</strong><span>Bloqueo de Energías</span></div>
+          <div><strong>Jueves</strong><span>Herramientas Preventivas / cursos cerrados</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="panel" id="auditorias">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Módulo 04</p>
+          <h3>Auditorías y Planes de Acción</h3>
+        </div>
+      </div>
+      <div class="cards-row" id="auditoriaCards"></div>
+    </section>
+
+    <section class="panel" id="documentos">
+      <p class="eyebrow">Módulo 05</p>
+      <h3>Biblioteca documental</h3>
+      <div class="doc-grid">
+        <a href="#" class="doc-card">Procedimientos</a>
+        <a href="#" class="doc-card">Instructivos</a>
+        <a href="#" class="doc-card">Formatos</a>
+        <a href="#" class="doc-card">Registros</a>
+        <a href="#" class="doc-card">Matriz legal</a>
+        <a href="#" class="doc-card">Reportes mensuales</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
